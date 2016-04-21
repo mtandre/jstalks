@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>JS Talks: Bucks Arena</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="hero">
+            <div class="container--hero">
+                <div class="hero--subtitle">Journal Sentinel Talks:</div>
+                <h1 class="hero--title">The Milwaukee Bucks Arena</h1>
+                <div class="hero--meta">
+                    <span class="hero--time">May 5<sup>th</sup> at 6:15pm</span>
+                    <span class="hero--bar">|</span>
+                    <span class="hero--location">Turner Hall, Milwaukee</span>
+                </div> 
+                <div class="hero--action">
+                    <a href="https://www.facebook.com/events/1596129177367557/" class="linkless"><div class="hero--button hero--button-rsvp">RSVP</div></a>
+                    <a href="#info" class="linkless"><div class="hero--button hero--button-info">More Info</div></a>
+                </div>
+            </div>
+            <img src="img/jstalks.png" class="hero--logo">
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+
+                <div class="about" id="info">
+                    <p class="about--info">
+                        <img class="about--image" src="img/info_card.jpg">
+                        The proposed Milwaukee Bucks arena and related development have been both controversial and more anticipated than any downtown project since the Milwaukee Art Museum. Will it be a great building? Will it transform our downtown?
+                        <br/><br/>
+                        Join the Bucks leadership, the lead architects and Milwaukee Journal Sentinel reporters for a lively discussion about this cityscape-altering project.
+                        <a href="https://www.facebook.com/events/1596129177367557/" class="linkless"><div class="about--button about--button-rsvp">RSVP</div></a>
+                        <a href="http://twitter.com/share?url=" class="linkless" target="_blank"><div class="about--button about--button-share">Spread the word</div></a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wrapper--panel">
+            <div class="container">
+
+                <div class="panel">
+                    <div class="panel--header">
+                        Panelists
+                    </div>
+                    <ul class="panel--list">
+                        <li class="panel--panelist">
+                            <a href="https://twitter.com/pfeigin" target="_blank" class="panel--link">
+                                <div style="background-image:url(img/p_feigin.jpg); background-position: center;" class="panel--image"></div>
+                            </a>
+                            <h3 class="panel--name">Peter Feigin</h3>
+                            <p class="panel--desc">Milwaukee Bucks President</p>
+                        </li>
+                        <li class="panel--panelist">
+                            <a href="https://twitter.com/Populous" target="_blank" class="panel--link">
+                                <div style="background-image:url(img/p_clark.jpg);" class="panel--image"></div>
+                            </a>
+                            <h3 class="panel--name">Brad Clark</h3>
+                            <p class="panel--desc">Populous architect</p>
+                        </li>
+                        <li class="panel--panelist">
+                            <a href="https://twitter.com/greguhen" target="_blank" class="panel--link">
+                                <div style="background-image:url(img/p_uhen.jpg);" class="panel--image"></div>
+                            </a>
+                            <h3 class="panel--name">Greg Uhen</h3>
+                            <p class="panel--desc">CEO of Eppstein Uhen Architects, Inc.</p>
+                        </li>
+                        <li class="panel--panelist">
+                            <a href="https://twitter.com/coolspacestv" target="_blank" class="panel--link">
+                                <div style="background-image:url(img/p_chung.jpg);" class="panel--image"></div>
+                            </a>
+                            <h3 class="panel--name">Steven Chung</h3>
+                            <p class="panel--desc">Architect and host of PBS "Cool Spaces"</p>
+                        </li>
+                    </ul>
+
+                    <div class="panel--header" style="margin-top: 75px;">
+                        Hosts
+                    </div>
+                    <ul class="panel--list">
+                        <li class="panel--panelist">
+                            <a href="https://twitter.com/TomDaykin" target="_blank" class="panel--link">
+                                <div style="background-image:url(img/p_daykin.jpg);" class="panel--image"></div>
+                            </a>
+                            <h3 class="panel--name">Tom Daykin</h3>
+                            <p class="panel--desc">Milwaukee Journal Sentinel business and commercial real estate and development reporter</p>
+                        </li>
+                        <li class="panel--panelist">
+                            <a href="https://twitter.com/artcity" target="_blank" class="panel--link">
+                                <div style="background-image:url(img/p_schumacher.jpg);" class="panel--image"></div>
+                            </a>
+                            <h3 class="panel--name">Mary Louise Schumacher</h3>
+                            <p class="panel--desc">Milwaukee Journal Sentinel art and architecture critic</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="map">
+            <div class="map--address">
+                <strong>Turner Hall</strong><br>
+                <address>
+                    1034 N. 4th Street<br>
+                    Milwaukee, WI 53203
+                </address>
+                <br>
+                <a href="https://maps.google.com?daddr=1034+N.+4th+Street+Milwaukee+WI+53203" target="_blank" class="map--link">Get Directions</a>
+            </div>
+            <div id="map--google"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx_FzxyVljs754xbhXsIB5IVwF_7XeRwc"></script>
+            <script>
+                function googleMap(){var o=document.getElementById("map--google"),e={center:new google.maps.LatLng(43.043805,-87.915645),scrollwheel:!1,zoom:13,mapTypeId:google.maps.MapTypeId.ROADMAP},o=new google.maps.Map(o,e),a=new google.maps.LatLng(43.043805,-87.915645);new google.maps.Marker({position:a,map:o,icon:"img/pin.svg"})};
+                google.maps.event.addDomListener(window,"load",googleMap);
+            </script>
+        </div>
+
+        <div class="wrapper--footer">
+            <div class="container">
+
+                <div class="footer">
+                    <div class="footer--thirds">
+                        <h5 class="footer--header">Follow Us</h5>
+                        <ul class="footer--list">
+                            <li class="footer--item">Twitter</li>
+                            <li class="footer--item">Facebook</li>
+                        </ul>
+                    </div>
+                    <div class="footer--thirds" style="width: 48%;">
+                        <h5 class="footer--header">Journal Sentinel Arena Coverage</h5>
+                        <ul class="footer--list">
+                            <li class="footer--item"><a href="http://www.jsonline.com/blogs/business/landandspace.html" class="footer--link">Tom Daykin's Land & Space Blog</a></li>
+                            <li class="footer--item"><a href="http://www.jsonline.com/entertainment/arts" class="footer--link">Mary Louise Schumacher's ArtCity</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer--thirds">
+                        <h5 class="footer--header">Questions</h5>
+                        <ul class="footer--list">
+                            <li class="footer--item"><a href="https://www.facebook.com/events/1596129177367557/?active_tab=posts" class="footer--link">Contact us here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
